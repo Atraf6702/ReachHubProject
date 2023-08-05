@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import FixedHeading from './components/FixedHeading'
+import Navbar from './components/Navbar'
+import UpperBody from './components/UpperBody'
+import FilterSection from './components/FilterSection'
+import MainBody from './components/MainBody'
 
-function App() {
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <div>
+      <FixedHeading/>
+      <Navbar/>
+      <UpperBody/>
+      <FilterSection/>
+      <MainBody/>
 
-export default App;
+    </div>
+  )
+}
